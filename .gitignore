@@ -1,0 +1,19 @@
+# Environments
+env/
+venv/
+
+# cache
+*/__pycache__/
+
+# Ignore database files (if using SQLite)
+db.sqlite3
+
+# Ignore Django migrations
+*.log
+*/migrations/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.log
+*.swp

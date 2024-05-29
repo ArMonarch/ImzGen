@@ -6,10 +6,18 @@
         {% block title-icon %}{%endblock%}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{% block title %}{%endblock%}</title>
+
         {% block link-js %}{%endblock%}
         {% block link-css %}{%endblock%}
+
+        {% block production-css %}{%endblock%}
+        {% block production-js %}{%endblock%}
+        
+        {% block development-script %}{%endblock%}
     </head>
     <body>
-        <div id="root"></div>
+        <div id="root">
+            {% block content %}{%endblock%}
+        </div>
     </body>
 </html>

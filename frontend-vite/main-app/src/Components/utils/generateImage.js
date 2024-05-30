@@ -3,7 +3,8 @@ import getRandomInt from "./getRandomInt";
 async function generateImage(values){
     const requestBody = {
         "prompt": values.prompt,
-        "negative_prompt":"(nsfw, naked, nude, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers:1.4), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation",
+        // "negative_prompt":"(nsfw, naked, nude, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers:1.4), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation",
+        "negative_prompt":"",
         "styles":[],
         "seed": -1,
         // "subseed": -1,
@@ -76,7 +77,7 @@ async function generateImage(values){
         width: response.parameters.width,
         height: response.parameters.height,
         margin:{
-          left: `${(getRandomInt(1,10)*5)+40}px`,
+          left: `${40 + getRandomInt(1,5)* 20}px`,
           right: ``,
           top: `${getRandomInt(1,4)*10}px`,
           bottom: ``,

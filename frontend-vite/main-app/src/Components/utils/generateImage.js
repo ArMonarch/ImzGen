@@ -76,7 +76,7 @@ async function generateImage(values){
         width: response.parameters.width,
         height: response.parameters.height,
         margin:{
-          left: `${(getRandomInt(12,32)*5)+10}px`,
+          left: `${(getRandomInt(1,10)*5)+40}px`,
           right: ``,
           top: `${getRandomInt(1,4)*10}px`,
           bottom: ``,
